@@ -17,7 +17,7 @@
       display: flex; 
       justify-content: space-between; 
       align-items: center; 
-      border-bottom: 4px solid #003d80; /* borda inferior */
+      border-bottom: 4px solid #003d80; 
     }
     h1 { margin: 0; }
     .filtros { display: flex; gap: 10px; }
@@ -44,7 +44,10 @@
       transition: transform 0.2s; 
     }
     .produto:hover { transform: scale(1.05); }
-    .produto img { max-width: 100%; border-radius: 10px; }
+    .produto img { 
+      max-width: 100%; 
+      border-radius: 10px; 
+    }
     .produto h3 { margin: 10px 0; }
     .produto p { color: #444; margin: 5px 0; }
     button { 
@@ -91,6 +94,7 @@
         <option value="couro">Couro</option>
         <option value="praia">Praia</option>
         <option value="mochila">Mochilas</option>
+        <option value="gif">GIFs Animados</option>
       </select>
     </div>
   </header>
@@ -110,7 +114,11 @@
       { nome: "Mochila Feminina Casual", preco: 120, categoria: "mochila", imagem: "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=400&q=80" },
       { nome: "Bolsa de Couro Premium", preco: 250, categoria: "couro", imagem: "https://images.unsplash.com/photo-1522336572468-97b06e8ef143?auto=format&fit=crop&w=400&q=80" },
       { nome: "Mochila Estilo Urbano", preco: 100, categoria: "mochila", imagem: "https://images.unsplash.com/photo-1618453292439-8dff1f1d1f88?auto=format&fit=crop&w=400&q=80" },
-      { nome: "Bolsa de Praia Rústica", preco: 110, categoria: "praia", imagem: "https://images.unsplash.com/photo-1620799139011-1a8b5d2c8c51?auto=format&fit=crop&w=400&q=80" }
+      { nome: "Bolsa de Praia Rústica", preco: 110, categoria: "praia", imagem: "https://images.unsplash.com/photo-1620799139011-1a8b5d2c8c51?auto=format&fit=crop&w=400&q=80" },
+      // Produtos com GIFs animados 🎞
+      { nome: "Bolsa Fashion Animada", preco: 180, categoria: "gif", imagem: "https://media.tenor.com/y2JXkY1pXkwAAAAM/bag-purse.gif" },
+      { nome: "Bolsa Rosa Animada", preco: 200, categoria: "gif", imagem: "https://media.tenor.com/vXj2YMBX0x4AAAAM/purse-fashion.gif" },
+      { nome: "Mochila Animada Estilosa", preco: 160, categoria: "gif", imagem: "https://media.tenor.com/hy2PgZ0m5o0AAAAM/backpack-bag.gif" }
     ];
 
     let carrinho = [];
